@@ -3,9 +3,9 @@ import NavLinks from "./NavLinks";
 
 const NormalMenu = () => {
     return (
-                 
-        <NavLinks></NavLinks>
-      
+        <div className='nav-links'>
+            <NavLinks></NavLinks>
+        </div> 
      );
 }
  

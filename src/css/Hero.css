@@ -20,11 +20,12 @@
 }
 
 .hero-title {
-    font-size: 7em;
+    font-size: 5em;
 }
 
 .hero-text {
     font-size: 1.5rem;
+    color: hsl(0, 0%, 41%)
 }
 
 .btn {
@@ -53,6 +54,7 @@
 
     .hero-container {
         flex-direction: column-reverse;
+        margin: 50px 5px;
     }
     .hero-title, .hero-text {
        text-align: center;
@@ -61,6 +63,16 @@
     .hero-title {
         font-size: 3rem;
     }
+
+    .hero-text {
+        font-size: 1.2rem;
+       
+    }
+
+    .brand {
+        margin: 80px 50px;
+    }
+
 
     .hero-left {
     

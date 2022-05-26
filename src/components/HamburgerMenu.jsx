@@ -3,9 +3,9 @@ import NavLinks from "./NavLinks";
 
 const HamburgerMenu = () => {
     return (
-                 
-        <NavLinks></NavLinks>
-      
+        <div className="nav-links-hambuger">
+            <NavLinks isHamburgerMenu={true}></NavLinks>
+        </div>
      );
 }
  

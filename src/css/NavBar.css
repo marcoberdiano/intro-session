@@ -4,19 +4,22 @@
     padding: 30px;
 }
 
+.logo {
+    flex-grow: 1;
+}
+
 .nav-links {
     display: flex;
     justify-content: space-between;
     flex-grow: 4;
 }
 
-.nav-links a {
-    margin: 0px 40px;
+.links {
     color: hsl(0, 0%, 41%)
 }
 
-.logo {
-    flex-grow: 1;
+.nav-links a {
+    margin: 0px 40px;
 }
 
 .arrow {
@@ -26,37 +29,31 @@
 #register {
     border-radius: 15px;
     padding: 10px 25px;
-    border: 1px solid hsl(0, 0%, 41%);
+    border: 2px solid hsl(0, 0%, 41%);
+}
+
+#register:hover {
+    border: 2px solid hsl(0, 0%, 8%);
 }
 
 .dropDown-Content {
+    text-align: left;
+    width: 120px;
+    right: 10px;
     margin: 15px 0px;
     padding: 5px 15px;
+    background-color: #FFFF;
     display: flex;
     justify-content: center;
     flex-direction: column;
-    border-radius: 10px;
-    background-color: #FFFF;
-    position: absolute;
-    right: 10px;
     list-style-type: none;
+    position: absolute;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 10px;
 }
 
-.dropDown-Content-company {
-    text-align: left;
-    width: 100px;
-    right: 10px;
-    margin: 15px 0px;
-    padding: 5px 15px;
-    background-color: #FFFF;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+.dropDown-Content-hamburger {
     list-style-type: none;
-    position: absolute;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    border-radius: 10px;
 }
 
 .dropDown {
@@ -77,17 +74,61 @@
 
 .dropDow-item {
     display: flex;
-    justify-content: flex-start;
-    gap: 10px;
+    align-items: center;
+}
+
+.dropDow-item:hover, .dropDow-item-company:hover {
+    color: hsl(0, 0%, 8%);
+    cursor: pointer;
+}
+
+.login-register {
+    color: hsl(0, 0%, 41%)
+}
+
+
+.dropDow-item span{
+    margin: 0px 5px;
+}
+
+
+.hamburger-menu {
+    display: none;
+    cursor: pointer;
+}
+
+.nav-links-hambuger {
+    display: none;
 }
 
 
 @media only screen and (max-width: 1100px) {
-    .nav-links {
-        flex-direction: column;
-        align-items: flex-end;
-        gap: 25px;
+    .nav-links-hambuger {
+        display: block;
+        background-color: hsl(0, 0%, 98%);
+        height: 100vh;
+        padding-left: 20px;
+        position: fixed;
+        width: 40%;;
+        right: 0;
+        top: 0;
+        padding-top: 80px;
     }
+    
+    .nav-links{
+        display: none;
+       
+    }
+
+   .hamburger-menu{
+       display: block;
+       position: fixed;
+       margin-right: 30px;
+       margin-top: 30px;
+       right: 0;
+       top: 0;
+       z-index: 1;
+   }
 
    
 
@@ -97,23 +138,24 @@
     }
 
     .login-register {
-        padding: 0px 20px;
-        gap: 10px;
         display: flex;
         flex-direction: column;
-        justify-content: center;
         align-items: center;
+        text-align: center;
+        gap: 20px;
     }
 
     .links {
         display: flex;
         flex-direction: column;
-        align-items: flex-start;
-        margin-right: 90px;
+                
+    }
+
+    .links a {
+        margin: 15px 0px;
     }
 
     #register {
-        width: 80%;
-        text-align: center;
+        width: 60%;
     }
   }

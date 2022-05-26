@@ -1,8 +1,8 @@
 import React from "react";
 
-const DropMenuCompany = () => {
+const DropMenuCompany = ({isHamburgerMenu}) => {
     return (  
-        <ul className='dropDown-Content-company'>
+        <ul className={!isHamburgerMenu ? 'dropDown-Content' : 'dropDown-Content-hamburger'}>
             <li className='dropDow-item-company'>
                 
             <span>History</span>

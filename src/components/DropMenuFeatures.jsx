@@ -6,15 +6,15 @@ import reminders from '../images/icon-reminders.svg'
 import planning from '../images/icon-planning.svg'
 
 
-const DropMenuFeatures = () => {
+const DropMenuFeatures = ({isHamburgerMenu}) => {
     return ( 
-        <ul className='dropDown-Content'>
+        <ul className={!isHamburgerMenu ? 'dropDown-Content' : ''}>
             <li className='dropDow-item'>
-            <span><img src={todo} alt={todo}/></span>
-            <span>Todo List</span>
+                <span><img src={todo} alt={todo}/></span>
+                <span>Todo List</span>
             </li>
             <li className='dropDow-item'>
-                <span><img src={calender} alt={calender}></img></span>
+                <span><img src={calender} alt={calender}/></span>
                 <span>Calendar</span>
             </li>
             <li className='dropDow-item'>
