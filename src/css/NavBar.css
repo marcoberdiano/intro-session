@@ -1,0 +1,119 @@
+.nav-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 4;
+}
+
+.nav-links a {
+    margin: 0px 40px;
+    color: hsl(0, 0%, 41%)
+}
+
+.logo {
+    flex-grow: 1;
+}
+
+.arrow {
+    margin-left: 5px;
+}
+
+#register {
+    border-radius: 15px;
+    padding: 10px 25px;
+    border: 1px solid hsl(0, 0%, 41%);
+}
+
+.dropDown-Content {
+    margin: 15px 0px;
+    padding: 5px 15px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 10px;
+    background-color: #FFFF;
+    position: absolute;
+    right: 10px;
+    list-style-type: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.dropDown-Content-company {
+    text-align: left;
+    width: 100px;
+    right: 10px;
+    margin: 15px 0px;
+    padding: 5px 15px;
+    background-color: #FFFF;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    list-style-type: none;
+    position: absolute;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 10px;
+}
+
+.dropDown {
+    position: relative;
+}
+
+.nav-title {
+    cursor: pointer;
+}
+
+.nav-title:hover {
+    color:hsl(0, 0%, 8%)
+}
+
+.dropDown li {
+    margin: 10px;
+}
+
+.dropDow-item {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+
+@media only screen and (max-width: 1100px) {
+    .nav-links {
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 25px;
+    }
+
+   
+
+    .nav-links div a {
+        display: block;
+        margin-bottom: 15px;
+    }
+
+    .login-register {
+        padding: 0px 20px;
+        gap: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .links {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-right: 90px;
+    }
+
+    #register {
+        width: 80%;
+        text-align: center;
+    }
+  }
