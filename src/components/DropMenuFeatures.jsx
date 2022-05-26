@@ -8,7 +8,7 @@ import planning from '../images/icon-planning.svg'
 
 const DropMenuFeatures = ({isHamburgerMenu}) => {
     return ( 
-        <ul className={!isHamburgerMenu ? 'dropDown-Content' : ''}>
+        <ul className={!isHamburgerMenu ? 'dropDown-Content' : 'dropDown-Content-hamburger'}>
             <li className='dropDow-item'>
                 <span><img src={todo} alt={todo}/></span>
                 <span>Todo List</span>

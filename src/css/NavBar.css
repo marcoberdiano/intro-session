@@ -112,8 +112,12 @@
         width: 40%;;
         right: 0;
         top: 0;
-        padding-top: 80px;
+        padding-top: 25px;
         
+    }
+
+    .dropDown-Content-hamburger {
+        padding: 0px 10px;
     }
     
     .nav-links{
@@ -123,10 +127,14 @@
 
    .hamburger-menu{
        display: block;
-       z-index: 1;
    }
 
-   
+   .hamburger-menu-close {
+        cursor: pointer;
+        text-align: right;
+        margin-right: 30px;
+   }
+
 
     .nav-links div a {
         display: block;

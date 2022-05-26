@@ -4,7 +4,7 @@ import HamburgerMenu from './HamburgerMenu'
 import NormalMenu from './NormalMenu'
 import '../css/NavBar.css'
 import iconMenu from '../images/icon-menu.svg'
-import iconCloseMenu from '../images/icon-close-menu.svg'
+
 
 const NavBar = () => {
 
@@ -23,11 +23,11 @@ const NavBar = () => {
                 </div>
                 <NormalMenu/>
                 <div className='hamburger-menu' onClick={handleMobileMenu}>
-                    <img src={!showMenu ? iconMenu : iconCloseMenu} alt={iconMenu}></img>
+                    <img src={iconMenu} alt={iconMenu}></img>
                 </div>
                 
             </div>
-            { showMenu &&<HamburgerMenu/>}
+            { showMenu &&<HamburgerMenu onClick={handleMobileMenu}/>}
         </nav>  
       );
 }
